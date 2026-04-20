@@ -1,0 +1,10 @@
+[package]
+name    = "tcp-pool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# tokio "full" pulls in net, io, sync, time, rt-multi-thread, macros
+tokio    = { version = "1", features = ["full"] }
+# derive-macro for clean Display/Error impls
+thiserror = "1"
